@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- frontend section quiz setting -->
+        <div class="start-screen">
+            <h1 class="heading">Quiz App</h1>
+            <div class="settings">
+                <!-- Number of Questions section -->
+                <label for="num-questions">Number of Questions</label>
+                <select name="" id="numofquestions">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                </select>
+
+                <!-- category selection section -->
+                <label for="category">select category</label>
+                <select name="" id="category">
+                    <option value="any">Any Category</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Entertainment: Books</option>
+                    <option value="11">Entertainment: Film</option>
+                    <option value="12">Entertainment: Music</option>
+                    <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                    <option value="14">Entertainment: Television</option>
+                    <option value="15">Entertainment: Video Games</option>
+                    <option value="16">Entertainment: Board Games</option>
+                    <option value="17">Science &amp; Nature</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="19">Science: Mathematics</option>
+                    <option value="20">Mythology</option>
+                    <option value="21">Sports</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="24">Politics</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                    <option value="27">Animals</option>
+                    <option value="28">Vehicles</option>
+                    <option value="29">Entertainment: Comics</option>
+                    <option value="30">Science: Gadgets</option>
+                    <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                    <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                </select>
+
+
+
+
+
+
+
+
+
+
+                
+
+                <!-- difficulty selection section -->
+                <label for="difficulty">select difficulty</label>
+                <select name="" id="difficulty">
+                    <option value="">any difficulty</option>
+                    <option value="easy">easy</option>
+                    <option value="median">median</option>
+                    <option value="hard">hard</option>
+                </select>
+
+                <!-- time selection section -->
+                <label for="time">select time per question</label>
+                <select name="" id="time">
+                    <option value="10">10 seconds</option>
+                    <option value="15">15 seconds</option>
+                    <option value="20">20 seconds</option>
+                    <option value="25">25 seconds</option>
+                    <option value="30">30 seconds</option>
+                    <option value="60">60 seconds</option>
+                </select>
+
+                <!-- start button -->
+                <button class="btn start">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- frontend section for quiz questions answer options -->
+        <div class="quiz hide">
+            <div class="timer">
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">Timer Started</span>
+                </div>
+            </div>
+
+            <div class="question-wrapper">
+                <div class="number">
+                    Question <span class="current">1</span>
+                    <span class="total">/10</span>
+                </div>
+                <div class="question">This is a Question</div>
+            </div>
+
+            <div class="answer-wrapper">
+                <!-- <div class="answer selected">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <span class="icon">✓</span>
+                    </span>
+                </div>
+                <div class="answer correct">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <span class="icon">✓</span>
+                    </span>
+                </div>
+                <div class="answer wrong">
+                    <span class="text">answer</span>
+                    <span class="checkbox">
+                        <span class="icon">✓</span>
+                    </span>
+                </div> -->
+            </div>
+
+            <button class="btn submit" disabled>Submit</button>
+            <button class="btn next">Next</button>
+        </div>
+
+        <div class="end-screen hide">
+            <h1 class="heading">Quiz App</h1>
+            <div class="score">
+                <span class="score-text">Your Score:</span>
+                <div>
+                    <span class="final-score">0</span>
+                    <span class="total-score">/10</span>
+                </div>
+                <button class="btn restart">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- script link -->
+    <script src="script.js"></script>
+</body>
+</html>
